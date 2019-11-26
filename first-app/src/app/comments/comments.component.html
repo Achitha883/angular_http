@@ -1,0 +1,13 @@
+<div class="posts-div">
+    <div class="header">Comments</div>
+    <table border="1">
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      <tr *ngFor="let comment of comments">
+        <td class="title"><a >{{comment.name}}</a></td>
+        <td class="description">{{comment.body}}</td>
+      </tr>
+    </table>
+  </div>

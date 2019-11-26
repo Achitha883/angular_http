@@ -1,0 +1,13 @@
+<div class="posts-div">
+  <div class="header">Posts</div>
+  <table border="1">
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td class="title"><a [routerLink]="['/comments',post.id]">{{post.title}}</a></td>
+      <td class="description">{{post.body}}</td>
+    </tr>
+  </table>
+</div>
